@@ -5,14 +5,14 @@ def swap(a,i,j):
    return
 
 def reverse(a):
-   print swap(a,2,3)
-
+   i = 0
+   while i < len(a) / 2:
+      swap(a,i,len(a) - 1 - i)
+      i = i + 1
 
 def main():
-   a = ["apple", "orange", "pear"]
-   print swap(a,i,j)
-   return
-
+   print swap([1, 2, 3, 4, 5], 2, 3)
+   print reverse([1, 2, 3, 4, 5])
 
 if __name__ == "__main__":
    main()
