@@ -1,11 +1,16 @@
 import sys
-n = sys.argv[1]
+n = input()
 
 def is_prime(n):
-   i = 0
-   while i < len(a):
-      if n > 1 or n % 2 == 0:
-         
-      i = i + 1
+   if n > 1:
+      for i in range(2,n):
+         if (n % i) == 0:
+            return False
+      else:
+         return True
+   else:
+      return False
+   
 
-print n
+result = is_prime(n)
+print result
